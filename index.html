@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seyon Rajagopal | Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/scripts.js"></script>
+
+    <header>
+
+        <h1 id="logo">SEYON RAJAGOPAL</h1>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#toAbout">About</a></li>
+                <li><a href="#toProjects">Projects</a></li>
+                <li><a href="#toSkills">Skills</a></li>
+                <li><a href="#toContact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="mobile-menu" class="shadow-large" onclick="openNav()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+
+    <div class="side-menu" id="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" onclick="closeNav()">Home</a>
+        <a href="#toAbout" onclick="closeNav()">About</a>
+        <a href="#toProjects" onclick="closeNav()">Projects</a>
+        <a href="#toSkills" onclick="closeNav()">Skills</a>
+        <a href="#toContact" onclick="closeNav()">Contact</a>
+    </div>
+
+    <div id="title">
+        <div id="title-content">
+            <h1 class="typewrite" data-period="2000"
+                data-type='[ "Im Seyon Rajagopal.", "A Designer.", "A Developer." ]'>
+                <span class="wrap"></span>
+            </h1>
+            <h2>2nd Year Computer Science Student</h2>
+            <a target="_blank" href="resume.pdf" class="btn-rounded-white">View Resume</a>
+        </div>
+        <div id="title-overlay"></div>
+        <div class="down">
+            <a href="#toAbout"><span id="to-down">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </span></a>
+        </div>
+    </div>
+
+    <div id="contentContainer">
+        <span class="jumpLink" id="toAbout"></span>
+        <div id="about">
+            <h1>About Me:</h1>
+            <p>Hello! I am a Second Year Computer Science student at Ryerson University in Toronto, Ontario, Canada.</p>
+        </div>
+
+        <span class="jumpLink" id="toProjects"></span>
+        <div id="projects">
+            <h1>My Projects:</h1>
+            <div id="project-content">
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/github.jpg" />
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Visit My GitHub</h3>
+                        <p>
+                            To see more of my projects please feel free to check out my GitHub page.
+                        </p>
+                        <a href="https://github.com/seyon123">Go To GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <span class="jumpLink" id="toSkills"></span>
+        <div id="skills">
+            <h1>My Skills:</h1>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>PHP</li>
+                <li>Ruby</li>
+                <li>Bash/Unix</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Jupyter Notebook</li>
+            </ul>
+        </div>
+
+        <span class="jumpLink" id="toContact"></span>
+        <div id="contact">
+            <h1>Get in Touch:</h1>
+            <div id="contact-form">
+                <form method="POST" action="https://formspree.io/seyonrajagopal@gmail.com">
+                    <input type="hidden" name="_subject" value="Contact request from personal website" />
+                    <input type="email" name="_replyto" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Your message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <!-- End #contact-form -->
+        </div>
+    </div>
+    <footer>
+
+        <div class="copyright">
+            <p>
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> Seyon Rajagopal
+            </p>
+        </div>
+
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="https://github.com/seyon123" target="_blank"><i class="fa fa-github"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/seyon1/" target="_blank"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/seyon-rajagopal" target="_blank"><i class="fa fa-linkedin"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/seyon.rajagopal.1" target="_blank"><i class="fa fa-facebook"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/SeyonRajagopal" target="_blank"><i class="fa fa-twitter"
+                            aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="top">
+            <a href="#"><span id="to-top">
+                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                </span></a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
