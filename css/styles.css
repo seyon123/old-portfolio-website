@@ -456,6 +456,62 @@ footer {
 }
 
 
+/* For Repos */
+
+.gw-repo-outer {
+    float: center;
+    width: 100%;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+
+  .gw-repo {
+    padding: 20px;
+    background-color: rgba(36,37,42,1);
+    width: 100%;
+  }
+  .gw-repo-desc {
+    color: white;
+    text-align: left;
+  }
+  .gw-title{
+    margin-bottom: 0.3em;
+    text-align: left;
+    
+  }
+  .gw-name {
+    font-weight: bold;
+    color: rgb(0, 136, 169);
+    text-align: left;
+  }
+  .gw-stats {
+    display: inline-block;
+    margin: 0;
+    float: right;
+    color: white;
+  }
+  .gw-watchers, .gw-forks {
+    display: inline-block;
+    height: 21px;
+    padding: 0 5px 0 23px;
+    line-height: 21px;
+    background: transparent url('../images/repostat.png') no-repeat 0 0;
+    color: white;
+  }
+  .gw-watchers {
+    background-position: 5px -2px;
+  }
+  .gw-forks {
+    background-position: 5px -52px;
+  }
+  .gw-lang {
+    font-size: 0.8em;
+    color: #777;
+    text-align: left;
+  }
+  .gw-clearer {
+    clear: left;
+  }
 
 /* Medium Devices */
 
