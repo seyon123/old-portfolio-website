@@ -262,9 +262,6 @@ header {
     margin-top:-100px;
 }
 
-#toProjects{
-    margin-top:50px !important;
-}
 
 #about {
     display: inline-block;
@@ -536,73 +533,6 @@ footer {
     color: rgb(0, 136, 169);
 }
 
-
-/* For Repos */
-
-.gw-repo-outer {
-    float: left;
-    width: 49%;
-    margin: 0 5px 5px 0;    
-  }
-
-  .gw-repo-outer:nth-child(2n + 1) {
-    clear: left;
-  }
-  
-  .gw-repo {
-    padding: 20px;
-    background-color: rgba(36,37,42,1);
-    width: 100%;
-    min-height: 150px;
-  }
-
-  .gw-repo:nth-child(2n) {
-    margin: 0 0 1em 1.5em;
-  }
-  .gw-repo-desc {
-    color: white;
-    text-align: left;
-    padding-top: 15px;
-  }
-  .gw-title{
-    margin-bottom: 0.3em;
-    text-align: left;
-    
-  }
-  .gw-name {
-    font-weight: bold;
-    color: rgb(0, 136, 169);
-    text-align: left;
-  }
-  .gw-stats {
-    display: inline-block;
-    margin: 0;
-    float: right;
-    color: white;
-  }
-  .gw-watchers, .gw-forks {
-    display: inline-block;
-    height: 21px;
-    padding: 0 5px 0 23px;
-    line-height: 21px;
-    background: transparent url('../images/repostat.png') no-repeat 0 0;
-    color: white;
-  }
-  .gw-watchers {
-    background-position: 5px -2px;
-  }
-  .gw-forks {
-    background-position: 5px -52px;
-  }
-  .gw-lang {
-    font-size: 0.8em;
-    color: #777;
-    text-align: left;
-  }
-  .gw-clearer {
-    clear: left;
-  }
-
 /* Medium Devices */
 
 @media only screen and (max-width : 1011px) {
@@ -696,10 +626,4 @@ footer {
     #title-content a {
         padding: 10px 20px;
     }
-
-    .gw-repo-outer {
-        float: left;
-        width: 100%;
-        margin: 0 5px 5px 0;    
-      }
 }
