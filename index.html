@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/scripts.js"></script>
 </head>
 
@@ -115,7 +116,8 @@
                     <input type="hidden" name="_subject" value="Contact request from personal website" />
                     <input type="email" name="_replyto" placeholder="Your email" required>
                     <textarea name="message" placeholder="Your message" required></textarea>
-                    <button type="submit">Send</button>
+                    <div class="g-recaptcha" data-sitekey="6Lcyw9UUAAAAAIvzEQlma5sZk_D6lcea4qPSrL2y"></div>
+                    <button type="submit" onclick="return callValidation();">Send</button>
                 </form>
             </div>
             <!-- End #contact-form -->

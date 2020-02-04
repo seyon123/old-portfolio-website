@@ -113,6 +113,17 @@ function genRepo(user) {
 }
 
 
+//code to validates recaptcha
+function callValidation(){
+    
+    if(grecaptcha.getResponse().length == 0){
+        alert('Please click the reCAPTCHA checkbox');
+        return false;
+    }
+    return true;
+}
+    
+
 // code for side menu
 function openNav() {
     document.getElementById("side-menu").style.height = "100%";
