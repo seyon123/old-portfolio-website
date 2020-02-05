@@ -113,11 +113,15 @@
             <h1>Get in Touch:</h1>
             <div id="contact-form">
                 <form method="POST" action="https://formspree.io/seyonrajagopal@gmail.com">
-                    <input type="hidden" name="_subject" value="Contact request from personal website" />
-                    <input type="email" name="_replyto" placeholder="Your email" required>
-                    <textarea name="message" placeholder="Your message" required></textarea>
-                    <div class="g-recaptcha" data-sitekey="6Lcyw9UUAAAAAIvzEQlma5sZk_D6lcea4qPSrL2y"></div>
-                    <button type="submit" onclick="return callValidation();">Send</button>
+                    <div class="input-field">
+                        <input type="hidden" name="_subject" value="Contact request from personal website" />
+                        <input id="email" type="email" name="_replyto" value="" onchange="this.setAttribute('value', this.value);" required>
+                        <label id="emailbox" for="email">Your email:</label>
+                        <textarea id="text" name="message" required></textarea>
+                        <label id="textbox" for="text">Your message:</label>
+                        <div class="g-recaptcha" data-sitekey="6Lcyw9UUAAAAAIvzEQlma5sZk_D6lcea4qPSrL2y"></div>
+                        <button type="submit" onclick="return callValidation();">Send</button>
+                    </div>
                 </form>
             </div>
             <!-- End #contact-form -->
