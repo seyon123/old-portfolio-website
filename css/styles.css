@@ -117,8 +117,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    background-color: rgba(36,37,42,0.6);
-    background-image :linear-gradient(rgba(36,37,42,1), rgba(36,37,42,0.4));
+    background-color: rgba(36,37,42,1);
     width: 100%;
     z-index: 4;
 }
@@ -146,6 +145,35 @@ header {
     background-color: rgba(0,139,165,1);
     border-radius:50px;
 }
+
+.notify{  
+    position:fixed;
+    top:98px;
+    left: 0;
+    width:100%;
+    height:0;  
+    box-sizing:border-box;
+    color:white;  
+    text-align:center;
+    background:rgba(207, 0, 0, 0.671);
+    overflow:hidden;
+    box-sizing:border-box;
+    transition:height .2s;
+    z-index: 10;
+  }
+  
+  #notifyType:before{
+    display:block;
+    margin-top:15px; 
+  }
+
+  .active{  
+    height:50px;
+  }
+  
+  .failure:before{
+    Content:"Please click the reCAPTCHA checkbox to submit";
+  }
 
 
 /* Title */
@@ -624,6 +652,10 @@ footer {
 
     #title-content h2 {
         font-size: 1.75em;
+    }
+
+    .notify {
+        top:0px;
     }
 
 }

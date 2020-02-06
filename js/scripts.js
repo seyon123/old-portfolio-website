@@ -114,10 +114,15 @@ function genRepo(user) {
 
 
 //code to validates recaptcha
-function callValidation(){
-    
-    if(grecaptcha.getResponse().length == 0){
-        alert('Please click the reCAPTCHA checkbox');
+function callValidation() {
+    if (grecaptcha.getResponse().length == 0) {
+        $(".notify").addClass("active");
+        $("#notifyType").addClass("failure");
+
+        setTimeout(function () {
+            $(".notify").removeClass("active");
+            $("#notifyType").removeClass("failure");
+        }, 3000);
         return false;
     }
     return true;
