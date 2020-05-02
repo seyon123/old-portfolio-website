@@ -33,6 +33,7 @@
     border-radius: 5px;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -69,7 +70,7 @@ body, html {
     z-index: 9;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgba(36,37,42,.9);
     overflow-y: hidden;
     transition: 0.5s;
     padding-top: 0px;
@@ -77,10 +78,11 @@ body, html {
 }
   
 .side-menu a {
-    padding: 8px 8px 8px 32px;
+    padding: 32px 16px 16px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
     display: block;
     transition: 0.3s;
 }
@@ -102,6 +104,8 @@ body, html {
     z-index: 20;
 }
 
+
+
 /* Nav Bar */
 li, a {
     font-weight: 500;
@@ -116,17 +120,17 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
-    background-color: rgba(36,37,42,1);
+    padding: 20px 5%;
+    background-image :linear-gradient(rgba(36,37,42,1), rgba(36,37,42,1));
     width: 100%;
     z-index: 4;
 }
 #logo{
     cursor:pointer;
     margin-right: auto;
-    color: whitesmoke;
-    
+    color: whitesmoke; 
 }
+
 #nav-links {
     list-style: none;
 }
@@ -145,6 +149,9 @@ header {
     background-color: rgba(0,139,165,1);
     border-radius:50px;
 }
+
+
+/* Error alert */
 
 .notify{  
     position:fixed;
@@ -173,6 +180,26 @@ header {
   
   .failure:before{
     Content:"Please click the reCAPTCHA checkbox to submit";
+  }
+
+
+/* Development site alert */
+.development{  
+    position:-webkit-sticky;
+    position: sticky;
+    bottom:0px;
+    left: 0;
+    height: 50px;
+    width:100%; 
+    box-sizing:border-box;
+    color:white;  
+    text-align:center;
+    background:rgba(238, 198, 21, 0.671);
+    display:block;
+    padding-top:15px; 
+    overflow:hidden;
+    box-sizing:border-box;
+    z-index: 11;
   }
 
 
@@ -240,7 +267,7 @@ header {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(36,37,42,0.8);
+    background: rgba(36,37,42, 0.8);
     z-index: 1;
 }
 
@@ -288,7 +315,7 @@ header {
 
 .jumpLink{
     position: absolute;
-    margin-top:-98px;
+    margin-top:-154px;
 }
 
 
@@ -323,7 +350,10 @@ header {
     background: rgba(36,37,42,1);
     border-radius: 10px;
     max-height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
+
 
 .project-image {
     float: left;
@@ -658,6 +688,12 @@ footer {
         top:0px;
     }
 
+    .jumpLink{
+        position: absolute;
+        margin-top:-50px;
+    }
+    
+
 }
 
 /* small devices */
@@ -717,5 +753,10 @@ footer {
 
     #title-content a {
         padding: 10px 20px;
+    }
+
+    .jumpLink{
+        position: absolute;
+        margin-top:-50px;
     }
 }

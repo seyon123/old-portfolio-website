@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Seyon Rajagopal | Portfolio</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/sr-nobg.gif" type="image/x-icon">
+    <link rel="icon" href="images/sr-nobg.gif" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
@@ -19,7 +19,7 @@
 <body>
     <header>
 
-        <h1 id="logo">SEYON RAJAGOPAL</h1>
+        <h1 id="logo"><img src="images/nobg-crp.gif" alt="" width="100"></h1>
         <nav>
             <ul id="nav-links">
                 <li><a href="#">Home</a></li>
@@ -44,8 +44,6 @@
         <a href="#toContact" onclick="closeNav()">Contact</a>
     </div>
 
-    <div class="notify"><span id="notifyType" class=""></span></div>
-
     <div id="title">
         <div id="title-content">
             <h1 class="typewrite" data-period="2000"
@@ -53,7 +51,7 @@
                 <span class="wrap"></span>
             </h1>
             <h2>2nd Year Computer Science Co-op Student</h2>
-            <a target="_blank" href="resume.pdf" class="btn-rounded-white">View Resume &nbsp; <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+            <a target="_blank" href="resume.pdf" class="btn-rounded-white">View Resume</a>
         </div>
         <div id="title-overlay"></div>
         <div class="down">
@@ -64,15 +62,18 @@
     </div>
 
     <div id="contentContainer">
-        <span class="jumpLink" id="toAbout"></span>
+        
+        
         <div id="about">
+            <span class="jumpLink" id="toAbout"></span>
             <h1>About Me:</h1>
             <p>Hello! I am a Second Year Computer Science Co-op Student at Ryerson University in Toronto, Ontario,
                 Canada. I am currently looking for Summer 2020 Opportunities</p>
         </div>
 
-        <span class="jumpLink" id="toProjects"></span>
+        
         <div id="projects">
+            <span class="jumpLink" id="toProjects"></span>
             <h1>My Projects:</h1>
             <div id="project-content">
                 <div id="repo-box"></div>
@@ -91,8 +92,9 @@
             </div>
         </div>
 
-        <span class="jumpLink" id="toSkills"></span>
+        
         <div id="skills">
+            <span class="jumpLink" id="toSkills"></span>
             <h1>My Skills:</h1>
             <ul>
                 <li>HTML5</li>
@@ -110,8 +112,9 @@
             </ul>
         </div>
 
-        <span class="jumpLink" id="toContact"></span>
+        
         <div id="contact">
+            <span class="jumpLink" id="toContact"></span>
             <h1>Get in Touch:</h1>
             <div id="contact-form">
                 <form method="POST" action="https://formspree.io/seyonrajagopal@gmail.com">
@@ -125,10 +128,11 @@
                         <button type="submit" onclick="return callValidation();">Send</button>
                     </div>
                 </form>
+                <div class="notify"><span id="notifyType" class=""></span></div>
             </div>
-            <!-- End #contact-form -->
         </div>
     </div>
+    <!-- <div class="development">This Site is Currently Under Development</div> -->
     <footer>
 
         <div class="copyright">
@@ -154,10 +158,6 @@
                 </li>
                 <li>
                     <a href="https://www.facebook.com/seyon.rajagopal.1" target="_blank"><i class="fa fa-facebook"
-                            aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/SeyonRajagopal" target="_blank"><i class="fa fa-twitter"
                             aria-hidden="true"></i></a>
                 </li>
             </ul>

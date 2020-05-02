@@ -44,6 +44,9 @@ TxtType.prototype.tick = function () {
     }, delta);
 };
 
+
+
+
 window.onload = function () {
     var elements = document.getElementsByClassName('typewrite');
     for (var i = 0; i < elements.length; i++) {
@@ -115,6 +118,7 @@ function genRepo(user) {
 
 //code to validates recaptcha
 function callValidation() {
+
     if (grecaptcha.getResponse().length == 0) {
         $(".notify").addClass("active");
         $("#notifyType").addClass("failure");
@@ -127,7 +131,6 @@ function callValidation() {
     }
     return true;
 }
-    
 
 // code for side menu
 function openNav() {
